@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  border: 1px solid black;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 50px 60px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+.para {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.image {
+  border: 1px solid black;
+  width: auto;
+  display: flex;
+}
+
+.attribution {
+  margin-top: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 50%;
+    height: auto;
+  }
+
+  .section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .stats {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .para {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
